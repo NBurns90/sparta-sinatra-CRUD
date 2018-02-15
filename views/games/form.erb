@@ -1,0 +1,25 @@
+<form action="/games/<%= @game[:id] %>" method="post">
+
+  <div class="">
+    <label>Title</label>
+    <input type="text" name="title" value="<%= @game[:title] %>" placeholder="Insert Text">
+  </div>
+
+  <div class="">
+    <label>Description</label>
+    <input type="text" name="body" value="<%= @game[:description] %>" placeholder="Insert Description">
+  </div>
+
+  <div class="">
+    <label>Genre</label>
+    <input type="text" name="body" value="<%= @game[:genreid] %>" placeholder="Insert Genre ID">
+  </div>
+
+  <div class="">
+    <input type="submit" value="Save">
+  </div>
+
+  <% if(@game[:id] != '') %>
+  <input type="hidden" name="_method" value="Save">
+  <% end %>
+</form>

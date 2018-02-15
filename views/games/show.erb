@@ -1,0 +1,8 @@
+<h1>Game Show Page</h1>
+
+<p><%= @game[:title] %></p>
+<p>Description: <%= @game[:description] %></p>
+<p>Genre: <%= @game[:genreid] %>
+<a href="/games/<%= @game[:id] %>/edit">Edit</a>
+<br>
+<a href="/genres/<%= @game[:genreid] %>">View Author Page</a>
