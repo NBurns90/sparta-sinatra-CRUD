@@ -7,19 +7,19 @@
 
   <div class="">
     <label>Description</label>
-    <input type="text" name="body" value="<%= @game[:description] %>" placeholder="Insert Description">
+    <input type="text" name="description" value="<%= @game[:description] %>" placeholder="Insert Description">
   </div>
 
   <div class="">
     <label>Genre</label>
-    <input type="text" name="body" value="<%= @game[:genreid] %>" placeholder="Insert Genre ID">
+    <input type="text" name="genreid" value="<%= @game[:genreid] %>" placeholder="Insert Genre ID">
   </div>
 
   <div class="">
-    <input type="submit" value="Save">
+    <input type="submit" value="Save Game">
   </div>
 
   <% if(@game[:id] != '') %>
-  <input type="hidden" name="_method" value="Save">
+  <input type="hidden" name="_method" value="Put">
   <% end %>
 </form>

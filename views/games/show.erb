@@ -5,4 +5,9 @@
 <p>Genre: <%= @game[:genreid] %>
 <a href="/games/<%= @game[:id] %>/edit">Edit</a>
 <br>
-<a href="/genres/<%= @game[:genreid] %>">View Author Page</a>
+<a href="/genres/<%= @game[:genreid] %>">View Genre Page</a>
+
+<form class="" action="<%= @game[:id] %>" method="post">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" name="" value="Delete">
+</form>
