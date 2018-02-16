@@ -1,0 +1,13 @@
+<h1>Game Show Page</h1>
+
+<p><%= @game[:title] %></p>
+<p>Description: <%= @game[:description] %></p>
+<p>Genre: <%= @game[:genreid] %>
+<a href="/games/<%= @game[:id] %>/edit">Edit</a>
+<br>
+<a href="/genres/<%= @game[:genreid] %>">View Genre Page</a>
+
+<form class="" action="<%= @game[:id] %>" method="post">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" name="" value="Delete">
+</form>
